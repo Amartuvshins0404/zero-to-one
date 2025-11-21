@@ -25,7 +25,7 @@ const Team: React.FC = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Header Animation
-      gsap.fromTo(".team-header", 
+      gsap.fromTo(".team-header",
         { y: 50, opacity: 0 },
         {
           y: 0,
@@ -39,7 +39,7 @@ const Team: React.FC = () => {
       );
 
       // Cards Animation
-      gsap.fromTo(".team-card", 
+      gsap.fromTo(".team-card",
         { y: 100, opacity: 0 },
         {
           y: 0,
@@ -65,7 +65,7 @@ const Team: React.FC = () => {
   return (
     <section ref={container} className="py-32 bg-zinc-50 text-zinc-900 min-h-screen">
       <div className="container mx-auto px-6">
-        
+
         <div className="mb-24 max-w-3xl team-header opacity-0">
             <h2 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter text-black uppercase leading-[0.9]">
                 {CONTENT.team.headline}
@@ -75,13 +75,13 @@ const Team: React.FC = () => {
             </p>
         </div>
 
-        <div ref={gridRef} className="team-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div ref={gridRef} className="team-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {CONTENT.team.members.map((member) => {
                 const isActive = activeMemberId === member.id;
-                
+
                 return (
-                    <div 
-                        key={member.id} 
+                    <div
+                        key={member.id}
                         className={`team-card group relative overflow-hidden rounded-lg cursor-pointer transition-all duration-700 ease-in-out h-[600px] w-full bg-black opacity-0`}
                         onClick={() => handleInteraction(member.id)}
                         onMouseEnter={() => !isTouch && setActiveMemberId(member.id)}
@@ -89,9 +89,9 @@ const Team: React.FC = () => {
                     >
                         {/* Image Layer */}
                         <div className="absolute inset-0 w-full h-full">
-                             <img 
-                                src={member.imageUrl} 
-                                alt={member.name} 
+                             <img
+                                src={member.imageUrl}
+                                alt={member.name}
                                 className={`w-full h-full object-cover transition-all duration-1000 ease-out ${isActive ? 'scale-110 grayscale-0' : 'scale-100 grayscale'}`}
                             />
                              <div className={`absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/90 transition-opacity duration-700 ${isActive ? 'opacity-90' : 'opacity-60'}`} />
@@ -104,7 +104,7 @@ const Team: React.FC = () => {
 
                         {/* Content Layer */}
                         <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 z-10 flex flex-col justify-end h-full pointer-events-none">
-                            
+
                             {/* Name & Role - Slides up when active */}
                             <div className={`transform transition-transform duration-500 ease-out origin-bottom-left ${isActive ? '-translate-y-2' : 'translate-y-0'}`}>
                                 <div className="flex items-center gap-3 mb-3 overflow-hidden">
@@ -126,7 +126,7 @@ const Team: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 );

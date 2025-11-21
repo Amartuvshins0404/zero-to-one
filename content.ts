@@ -97,13 +97,6 @@ export const CONTENT = {
         bio: "Компаний хууль зүйн асуудлыг голчлон хариуцаж ажилладаг ба үйл ажиллагааны хэрэгжилтэд анхааран ажиллаж байгаа",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763734154/Gemini_Generated_Image_dakdridakdridakd_tupy7m.png"
       },
-      {
-        id: 4,
-        name: "Б. Эрхэмбаяр",
-        role: "CMO",
-        bio: "Маркетинг PR, Компаний гадаад үйл ажиллагааг хариуцан ажиллаж байгаа",
-        imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763734675/584604312_1418474996562305_2893328443815505716_n_nyzkhh.jpg"
-      }
     ]
   },
   contact: {
@@ -112,7 +105,7 @@ export const CONTENT = {
     email: "dulguuntamir.edu@gmail.com",
     phone: "+976 9600-1214",
     socials: [
-      { name: "Instagram", link: "https://instagram.com/zero2one" },
+      { name: "Instagram", link: "https://www.instagram.com/zerotoonemain/" },
       { name: "Facebook", link: "https://facebook.com/ZeroToOne" }
     ],
     copyright: "Zero To One."
