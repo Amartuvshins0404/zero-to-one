@@ -92,7 +92,7 @@ const Team: React.FC = () => {
                              <img
                                 src={member.imageUrl}
                                 alt={member.name}
-                                className={`w-full h-full object-cover transition-all duration-1000 ease-out ${isActive ? 'scale-110 grayscale-0' : 'scale-100 grayscale'} ${member.name == "Э. Дөлгөөнтамир" && `mt-16`} ${member.role == "COO" && `ml-8 scale-125 mb-10 hover:scale-135`}`}
+                                className={`w-full h-full object-cover transition-all duration-1000 ease-out ${isActive ? 'scale-110 grayscale-0' : 'scale-100 grayscale'} ${member.name == "Э. Дөлгөөнтамир" && `mt-16`} ${member.role == "COO" && `ml-8 scale-125 mb-10 hover:scale-150`}`}
                             />
                              <div className={`absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/90 transition-opacity duration-700 ${isActive ? 'opacity-90' : 'opacity-60'}`} />
                         </div>
