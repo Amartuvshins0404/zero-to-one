@@ -106,7 +106,6 @@ export const CONTENT = {
     phone: "+976 9600-1214",
     socials: [
       { name: "Instagram", link: "https://www.instagram.com/zerotoonemain/" },
-      { name: "Facebook", link: "https://facebook.com/ZeroToOne" }
     ],
     copyright: "Zero To One."
   },
