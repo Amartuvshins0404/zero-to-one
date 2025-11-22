@@ -68,7 +68,7 @@ export const CONTENT = {
         category: "Веб апп",
         description: "Та өөрийн хүссэн веб сайтыг үүсгэх боломжтой",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763713780/web-design-header_tzquyr.jpg",
-        link: "callto:+97696001214"
+        link: "tel:+97696001214"
       }
     ]
   },
