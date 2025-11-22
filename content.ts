@@ -52,7 +52,7 @@ export const CONTENT = {
         category: "Вебсайт",
         description: "Танай байгууллагын танилцуулга, Portfolio хуудсыг бүтээх боломжтой",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763711368/company-profile_r2klni.jpg",
-        link: "#"
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSddCRRRKNkGBEbxBCxtdsH-2y76iVdCzwuPWplp-wQ8S8ZEgg/viewform"
       },
       {
         id: 4,
@@ -60,7 +60,7 @@ export const CONTENT = {
         category: "Веб апп дахь үйлчилгээ",
         description: "QPay, Toki, Google Wallet, MonPay, SocialPay зэрэг бүх төрлийн төлбөрийн систем болон DAN бүртгэлийн систем нэвтрүүлэх үйлчилгээг үзүүлнэ",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763711510/thumb_117_750x300_0_0_crop_ujt8qi.jpg",
-        link: "#"
+        link: "mailto:dulguuntamir.edu@gmail.com"
       },
       {
         id: 5,
@@ -68,7 +68,7 @@ export const CONTENT = {
         category: "Веб апп",
         description: "Та өөрийн хүссэн веб сайтыг үүсгэх боломжтой",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763713780/web-design-header_tzquyr.jpg",
-        link: "#"
+        link: "callto:+97696001214"
       }
     ]
   },
