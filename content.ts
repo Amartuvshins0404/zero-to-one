@@ -60,7 +60,7 @@ export const CONTENT = {
         category: "Веб апп дахь үйлчилгээ",
         description: "QPay, Toki, Google Wallet, MonPay, SocialPay зэрэг бүх төрлийн төлбөрийн систем болон DAN бүртгэлийн систем нэвтрүүлэх үйлчилгээг үзүүлнэ",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763711510/thumb_117_750x300_0_0_crop_ujt8qi.jpg",
-        link: "mailto:dulguuntamir.edu@gmail.com"
+        link: "https://docs.google.com/forms/d/e/1FAIpQLScmXvWTZt_JQu8UynF-7BBbPNHXxeQ0IMtY6xhomxy2UllE1A/viewform"
       },
       {
         id: 5,
