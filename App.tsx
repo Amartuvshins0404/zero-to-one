@@ -25,7 +25,6 @@ const App: React.FC = () => {
       ScrollTrigger.create({
         trigger: "#contact",
         start: "top top",
-        end: "bottom bottom",
         onEnter: () => {
           document.body.classList.remove('theme-dark');
           document.body.classList.add('theme-light');
@@ -35,8 +34,8 @@ const App: React.FC = () => {
           document.body.classList.add('theme-light');
         },
         onLeaveBack: () => {
-          document.body.classList.remove('theme-light');
-          document.body.classList.add('theme-dark');
+          document.body.classList.remove('theme-dark');
+          document.body.classList.add('theme-light');
         },
       });
 
@@ -44,14 +43,12 @@ const App: React.FC = () => {
       ScrollTrigger.create({
         trigger: "#team",
         start: "top top",
-        end: "bottom bottom",
+
         onEnter: () => {
           document.body.classList.remove('theme-light');
-          document.body.classList.add('theme-dark');
         },
         onLeaveBack: () => {
-          document.body.classList.remove('theme-dark');
-          document.body.classList.add('theme-light');
+          document.body.classList.remove('theme-light');
         },
       });
     }, mainRef);

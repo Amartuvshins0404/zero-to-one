@@ -44,7 +44,7 @@ export const CONTENT = {
         category: "News Website",
         description: "Орчин үеийн дизайн шийдэлийг танд санал болгож байна. SEO Optimized, Admin Dashboard, Engagement-tracking System, Comment System, Бүртгэлийн систем зэрэг бүх төрлөөр тохиоруулах боломжтой",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763711208/online-news-application-concept-online-news-article-news-webpage-online-mass-media-internet-bulletin-reading-news-online-reading-breaking-news-on-webpage-flat-illustration-vector_ks8gut.jpg",
-        link: "#"
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSfUEgEhPL2ju51MZ6zTRSljSndxsHbi2fg46s9zQYC75pppbg/viewform?usp=send_form"
       },
       {
         id: 3,
