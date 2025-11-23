@@ -137,7 +137,7 @@ export const CONTENT = {
           "Google хайлтад илэрц сайтай (SEO)"
         ],
         ctaText: "Эхлүүлэх",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       },
       {
         title: "Premium Plan",
@@ -151,7 +151,7 @@ export const CONTENT = {
           "Бүрэн хэмжээний админ удирдлага"
         ],
         ctaText: "Эхлүүлэх",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       }
     ],
     services: [
@@ -169,7 +169,7 @@ export const CONTENT = {
           "Хурдан ажиллагаатай сервер (2-Core, 4GB RAM)"
         ],
         ctaText: "Сонгох",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       },
       {
         title: "Advanced Level 2",
@@ -181,7 +181,7 @@ export const CONTENT = {
           "Илүү их хандалт даах чадвар"
         ],
         ctaText: "Сонгох",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       },
       {
         title: "Advanced Level 3",
@@ -193,7 +193,7 @@ export const CONTENT = {
           "Томоохон байгууллагад тохиромжтой"
         ],
         ctaText: "Сонгох",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       },
       {
         title: "Premium Service",
@@ -206,7 +206,7 @@ export const CONTENT = {
           "Байгууллагын онцлогт тохирсон тусгай хөгжүүлэлт"
         ],
         ctaText: "Холбогдох",
-        ctaUrl: "#contact"
+        ctaUrl: "tel:+97696001214"
       }
     ]
   }
