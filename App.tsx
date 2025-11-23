@@ -6,6 +6,7 @@ import AIChat from './components/AIChat';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Pricing from './components/Pricing';
 import Projects from './components/Projects';
 import Team from './components/Team';
 
@@ -61,6 +62,7 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Projects />
+      <Pricing />
       <Contact />
       <Team />
       <Footer />
