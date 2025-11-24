@@ -1,49 +1,54 @@
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+
 import { ArrowUpRight } from 'lucide-react';
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { Swiper as SwiperType } from 'swiper';
+import { Autoplay, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { CONTENT } from '../content';
 
-gsap.registerPlugin(ScrollTrigger);
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const Projects: React.FC = () => {
-    const sectionRef = useRef<HTMLDivElement>(null);
-    const triggerRef = useRef<HTMLDivElement>(null);
-
     const projectsList = CONTENT.projects.items;
-
-    useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
-            const projects = gsap.utils.toArray(".project-card");
-
-            gsap.to(projects, {
-                xPercent: -100 * (projects.length - 1),
-                ease: "none",
-                scrollTrigger: {
-                    trigger: triggerRef.current,
-                    pin: true,
-                    scrub: 1,
-                    snap: {
-                        snapTo: 1 / (projects.length - 1),
-                        duration: { min: 0.2, max: 0.5 },
-                        delay: 0.1
-                    },
-                    end: () => "+=" + (window.innerWidth * (projectsList.length)),
-                }
-            });
-        }, sectionRef);
-
-        return () => ctx.revert();
-    }, [projectsList.length]);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
     return (
-        <section ref={sectionRef} className="relative bg-zinc-950 text-white overflow-hidden">
-            <div ref={triggerRef} className="h-screen flex items-center overflow-hidden">
-                {/* Horizontal Scroll Content - Full Width with Responsive Padding */}
-                <div className="flex pl-6 md:pl-[10vw] gap-6 md:gap-12 items-center">
+        <section className="relative bg-zinc-950 text-white py-24 overflow-hidden">
+            <div className="container mx-auto px-6 mb-12">
+                <h2 className="text-4xl md:text-6xl font-bold mb-4">Бидний Төслүүд</h2>
+            </div>
+
+            <div className="w-full px-4 md:px-0">
+                <Swiper
+                    modules={[Navigation, Autoplay]}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    centeredSlides={true}
+                    loop={true}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
+                    onSwiper={setSwiperInstance}
+                    onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 40,
+                        },
+                    }}
+                    className="w-full !pb-12"
+                >
                     {projectsList.map((project) => (
-                        <div key={project.id} className="project-card relative w-[85vw] md:w-[70vw] h-[60vh] md:h-[75vh] flex-shrink-0 group cursor-pointer">
-                            <a href={project.link} className="block w-full h-full overflow-hidden rounded-3xl bg-zinc-900 border border-zinc-800 relative shadow-2xl">
+                        <SwiperSlide key={project.id} className="group cursor-pointer">
+                            <a href={project.link} className="block w-full h-[60vh] md:h-[70vh] overflow-hidden rounded-3xl bg-zinc-900 border border-zinc-800 relative shadow-2xl">
                                 {/* Image Layer with Zoom Effect */}
                                 <div className="absolute inset-0 overflow-hidden">
                                     <img
@@ -62,7 +67,7 @@ const Projects: React.FC = () => {
                                         </span>
 
                                         <div className="flex items-center justify-between mb-4">
-                                            <h3 className="text-2xl md:text-5xl font-bold text-white group-hover:text-indigo-200 transition-colors duration-300">
+                                            <h3 className="text-2xl md:text-4xl font-bold text-white group-hover:text-indigo-200 transition-colors duration-300">
                                                 {project.title}
                                             </h3>
                                             <div
@@ -79,8 +84,25 @@ const Projects: React.FC = () => {
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </SwiperSlide>
                     ))}
+                </Swiper>
+
+                {/* Custom Sliding Pagination */}
+                <div className="flex justify-center mt-8">
+                    <div className="relative flex items-center gap-4 bg-zinc-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-zinc-800/50">
+                        {projectsList.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => swiperInstance?.slideToLoop(index)}
+                                className={`h-2 rounded-full transition-all duration-500 ease-out ${activeIndex === index
+                                        ? 'w-8 bg-gradient-to-r from-indigo-500 to-purple-500 shadow-[0_0_10px_rgba(79,70,229,0.5)]'
+                                        : 'w-2 bg-zinc-600 hover:bg-zinc-400'
+                                    }`}
+                                aria-label={`Go to slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
