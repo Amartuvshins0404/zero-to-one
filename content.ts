@@ -18,9 +18,9 @@ export const CONTENT = {
     ctaButton: "Холбоо барих"
   },
   about: {
-    label: "Бид хэн бэ",
-    headline: "Дижитал эриний\nинженерүүд.",
-    description: "Бид бол дизайнер, хөгжүүлэгч, хуульчдаас бүрдсэн баг. Хялбар, хурдан, хямд, богино хугацаанд бид таны вебсайтыг урлаж өгөх болно.",
+    label: "Why choose us?",
+    headline: "Simple, Smart and Professional",
+    description: "We blend design, technology, and legal expertise to craft websites that are fast, reliable, and built with care.",
     stats: [
       { num: "15", label: "Хийсэн төсөл" },
       { num: "15", label: "Амжилттай Төсөл" },
@@ -73,28 +73,28 @@ export const CONTENT = {
     ]
   },
   team: {
-    headline: "Манай Баг",
-    subHeadline: "Бид зүгээр нэг хамтран ажилладаггүй, бид хамтдаа хөгждөг.",
+    headline: "Our team",
+    subHeadline: "We hate traditional way of doing things and we love to break the rules.",
     members: [
       {
         id: 1,
         name: "С. Амартөвшин",
-        role: "CEO",
-        bio: "Програм хангамжаар туршлагатай ба веб платформ хөгжүүлэлт болон компаний ерөнхий үйл ажиллагааг хариуцан ажиллаж байгайй",
+        role: "Developer",
+        bio: "Passionate developer who loves to play with Website Animation design.",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763733930/Gemini_Generated_Image_709sku709sku709s_owvp4i.jpg"
       },
       {
         id: 2,
         name: "Э. Дөлгөөнтамир",
-        role: "CFO",
+        role: "Product manager",
         bio: "Компаний Finance болон продактив байдлыг хангаж ажиллаж байгаа",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/c_crop,w_666,h_700/v1763716842/image_ootekm.png"
       },
       {
         id: 3,
         name: "А. Билгүүн",
-        role: "COO",
-        bio: "Компаний хууль зүйн асуудлыг голчлон хариуцаж ажилладаг ба үйл ажиллагааны хэрэгжилтэд анхааран ажиллаж байгаа",
+        role: "Operation organizer",
+        bio: "Компаны хууль зүйн асуудал болон үйл ажиллагааны хэрэгжилтийг хариуцдаг",
         imageUrl: "https://res.cloudinary.com/dqqtsazli/image/upload/v1763734154/Gemini_Generated_Image_dakdridakdridakd_tupy7m.png"
       },
     ]
@@ -126,7 +126,7 @@ export const CONTENT = {
     },
     products: [
       {
-        title: "Basic Plan",
+        title: "Basic Website Plan",
         priceRange: "₮1,500,000 - ₮2,500,000",
         description: "Танилцуулга вебсайт, портфолио болон энгийн бүтэцтэй вебсайтууд.",
         features: [
@@ -140,7 +140,7 @@ export const CONTENT = {
         ctaUrl: "tel:+97696001214"
       },
       {
-        title: "Premium Plan",
+        title: "Premium Platform Plan",
         priceRange: "₮4,500,000 - ₮8,000,000",
         description: "Цогц веб платформууд (Онлайн дэлгүүр, Мэдээний сайт гэх мэт).",
         features: [
@@ -156,7 +156,7 @@ export const CONTENT = {
     ],
     services: [
       {
-        title: "Advanced Level 1",
+        title: "Maintainance Service 1",
         price: "₮600,000/сар",
         features: [
           ".mn домэйн нэр үнэгүй",
@@ -172,10 +172,10 @@ export const CONTENT = {
         ctaUrl: "tel:+97696001214"
       },
       {
-        title: "Advanced Level 2",
+        title: "Maintainance Service 2",
         price: "₮800,000/сар",
         features: [
-          "Advanced Level 1-ийн бүх боломжууд",
+          "Maintainance Level 1-ийн бүх боломжууд",
           "Илүү өндөр хүчин чадалтай сервер (4-Core, 8GB RAM)",
           "AI туслахын хэрэглээг нэмэгдүүлэх",
           "Илүү их хандалт даах чадвар"
@@ -184,10 +184,10 @@ export const CONTENT = {
         ctaUrl: "tel:+97696001214"
       },
       {
-        title: "Advanced Level 3",
+        title: "Maintainance Service 3",
         price: "₮1,200,000/сар",
         features: [
-          "Advanced Level 2-ийн бүх боломжууд",
+          "Maintainance Level 2-ийн бүх боломжууд",
           "Өндөр ачаалал даах сервер (6-Core, 16GB RAM)",
           "AI туслахын хязгааргүй шахуу хэрэглээ",
           "Томоохон байгууллагад тохиромжтой"
@@ -196,10 +196,10 @@ export const CONTENT = {
         ctaUrl: "tel:+97696001214"
       },
       {
-        title: "Premium Service",
+        title: "Premium Maintainance Service",
         price: "₮1,800,000/сар",
         features: [
-          "Advanced Level 3-ийн бүх боломжууд",
+          "Premium Level 3-ийн бүх боломжууд",
           "Хамгийн өндөр хүчин чадал (8-Core, 32GB RAM)",
           "Томоохон шинэчлэлт, хөгжүүлэлт хийх эрх",
           "Хэрэглэгчийн нарийн дата цуглуулах систем",

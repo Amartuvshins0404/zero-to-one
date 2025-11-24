@@ -7,6 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <p>&copy; {new Date().getFullYear()} {CONTENT.contact.copyright}</p>
         <div className="flex gap-8 mt-4 md:mt-0">
+          <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           {CONTENT.contact.socials.map((social, idx) => (
             <a key={idx} href={social.link} className="hover:text-white transition-colors">{social.name}</a>
           ))}
