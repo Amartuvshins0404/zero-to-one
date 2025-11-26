@@ -18,7 +18,7 @@ export const CONTENT = {
     description: "Бизнес бол таны хувьд ажил биш, систем болоход тань туслах багийг та эндээс оллоо. 24/7 working is not the way to build business!",
     ctaPrimary: "Төсөл эхлүүлье",
     ctaSecondary: "Бидний ажил үзье",
-    backgroundImage: "https://res-console.cloudinary.com/dolfbqzp3/thumbnails/v1/image/upload/v1764166863/dW5uYW1lZF9mdzk1eWY=/template_primary/Y19jcm9wLHdfNDUwLGhfNDAw"
+    backgroundImage: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,w_450,h_400/v1764166863/unnamed_fw95yf.png"
   },
   about: {
     label: "Яагаад бид гэж?",
@@ -58,7 +58,7 @@ export const CONTENT = {
         title: "Дан Систем нэвтрүүлэлт",
         category: "Брэндинг",
         description: "QPay, Toki, Google Wallet, MonPay, SocialPay зэрэг бүх төрлийн төлбөрийн систем болон DAN бүртгэлийн систем нэвтрүүлэх үйлчилгээг үзүүлнэ",
-        imageUrl: "https://res-console.cloudinary.com/dolfbqzp3/thumbnails/v1/image/upload/v1764166944/c2RkZWZhdWx0X3htYjhtbg==/template_primary/Y19jcm9wLGhfMzYw",
+        imageUrl: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,h_350/v1764166944/sddefault_xmb8mn.jpg",
         link: "https://docs.google.com/forms/d/e/1FAIpQLScmXvWTZt_JQu8UynF-7BBbPNHXxeQ0IMtY6xhomxy2UllE1A/viewform"
       }
     ]
@@ -95,7 +95,7 @@ export const CONTENT = {
     headline: "Бидэнтэй холбогдох маш амархан",
     description: "Аль ч өдөр 9:00 - 23:00 хүртэл холбогдоод хэрэгтэй мэдээллээ аваарай. Утас, и-мэйл, сошиал - ямар ч байдлаар холбогдох боломжтой.",
     ctaButton: "Ярилцъя",
-    backgroundImage: "https://res-console.cloudinary.com/dolfbqzp3/thumbnails/v1/image/upload/v1764166863/dW5uYW1lZF9mdzk1eWY=/template_primary/Y19jcm9wLHdfNDUwLGhfNDAw",
+    backgroundImage: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,w_450,h_400/v1764166863/unnamed_fw95yf.png",
     email: "dulguuntamir.edu@gmail.com",
     phone: "+976 9600-1214",
     socials: [
