@@ -187,8 +187,8 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, onClose, onToggle }) => {
                             {messages.map((msg, idx) => (
                                 <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                                     <div className={`max-w-[85%] p-4 rounded-2xl text-sm ${msg.role === 'user'
-                                            ? 'bg-indigo-600 text-white rounded-br-none'
-                                            : 'bg-zinc-800 text-zinc-200 rounded-bl-none border border-zinc-700'
+                                        ? 'bg-indigo-600 text-white rounded-br-none'
+                                        : 'bg-zinc-800 text-zinc-200 rounded-bl-none border border-zinc-700'
                                         }`}>
                                         {formatMessage(msg.text)}
                                     </div>
@@ -231,55 +231,46 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, onClose, onToggle }) => {
     }
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end font-sans">
+        <>
             {isOpen && (
-                <div className="mb-4 w-[90vw] max-w-md h-[550px] bg-zinc-900/95 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-10 fade-in duration-300">
+                <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end font-sans pointer-events-none">
+                    <div className="mb-4 w-[90vw] max-w-md h-[550px] bg-zinc-900/95 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-10 fade-in duration-300 pointer-events-auto">
 
-                    {/* Header */}
-                    <div className="p-4 border-b border-zinc-800 bg-zinc-900/50 flex justify-between items-center">
-                        <div className="flex items-center gap-2">
-                            {view !== 'menu' && (
-                                <button onClick={() => setView('menu')} className="mr-1 text-zinc-400 hover:text-white transition-colors p-1 rounded-full hover:bg-zinc-800">
-                                    <ArrowLeft size={18} />
-                                </button>
-                            )}
-                            {view === 'menu' && <Sparkles className="text-purple-500" size={18} />}
+                        {/* Header */}
+                        <div className="p-4 border-b border-zinc-800 bg-zinc-900/50 flex justify-between items-center">
+                            <div className="flex items-center gap-2">
+                                {view !== 'menu' && (
+                                    <button onClick={() => setView('menu')} className="mr-1 text-zinc-400 hover:text-white transition-colors p-1 rounded-full hover:bg-zinc-800">
+                                        <ArrowLeft size={18} />
+                                    </button>
+                                )}
+                                {view === 'menu' && <Sparkles className="text-purple-500" size={18} />}
 
-                            <div>
-                                <h3 className="font-bold text-white text-sm">
-                                    {view === 'menu' && CONTENT.ai.title}
-                                    {view === 'chat' && 'AI Туслах'}
-                                    {view === 'contact' && 'Холбоо барих'}
-                                </h3>
-                                <p className="text-xs text-zinc-500">
-                                    {view === 'menu' ? `Powered by ${CONTENT.ai.poweredBy}` : CONTENT.meta.name}
-                                </p>
+                                <div>
+                                    <h3 className="font-bold text-white text-sm">
+                                        {view === 'menu' && CONTENT.ai.title}
+                                        {view === 'chat' && 'AI Туслах'}
+                                        {view === 'contact' && 'Холбоо барих'}
+                                    </h3>
+                                    <p className="text-xs text-zinc-500">
+                                        {view === 'menu' ? `Powered by ${CONTENT.ai.poweredBy}` : CONTENT.meta.name}
+                                    </p>
+                                </div>
                             </div>
+                            <button onClick={onClose} className="text-zinc-400 hover:text-white transition-colors p-1 rounded-full hover:bg-zinc-800">
+                                <X size={18} />
+                            </button>
                         </div>
-                        <button onClick={onClose} className="text-zinc-400 hover:text-white transition-colors p-1 rounded-full hover:bg-zinc-800">
-                            <X size={18} />
-                        </button>
-                    </div>
 
-                    {/* Content Area */}
-                    <div className="flex-1 flex flex-col overflow-hidden relative">
-                        {renderContent()}
-                    </div>
+                        {/* Content Area */}
+                        <div className="flex-1 flex flex-col overflow-hidden relative">
+                            {renderContent()}
+                        </div>
 
+                    </div>
                 </div>
             )}
-
-            <button
-                onClick={onToggle}
-                className="group flex items-center justify-center w-14 h-14 bg-white text-black rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-110 transition-all duration-300 active:scale-95"
-            >
-                {isOpen ? (
-                    <X size={24} className="transition-transform duration-300 group-hover:rotate-90" />
-                ) : (
-                    <Phone size={24} className="transition-transform duration-300" />
-                )}
-            </button>
-        </div>
+        </>
     );
 };
 

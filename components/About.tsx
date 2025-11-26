@@ -1,66 +1,40 @@
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import React, { useLayoutEffect, useRef } from 'react';
+import React from 'react';
 import { CONTENT } from '../content';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const About: React.FC = () => {
-  const container = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-
-      // Animate lines revealing
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse"
-        }
-      });
-
-      tl.from(".stat-item", {
-        y: 100,
-        opacity: 0,
-        stagger: 0.1,
-        ease: "power2.out"
-      });
-
-    }, container);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section ref={container} className="h-screen w-full bg-zinc-950 text-white flex items-center justify-center relative overflow-hidden">
+    <section id="about" className="bg-background-dark py-24 sm:py-32">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          {/* Text Content */}
+          <div className="space-y-6">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+              {CONTENT.about.label}
+            </p>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-text-primary-dark leading-tight">
+              {CONTENT.about.headline}
+            </h2>
+            <p className="text-lg text-text-secondary-dark leading-relaxed">
+              {CONTENT.about.description}
+            </p>
+          </div>
 
-      {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600 rounded-full blur-[128px]"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full blur-[128px]"></div>
-      </div>
-
-      <div ref={contentRef} className="container mx-auto px-6 z-10 flex flex-col md:flex-row justify-between items-center gap-12">
-
-        <div className="w-full md:w-1/2">
-          <h4 className="text-indigo-500 font-mono text-sm tracking-widest mb-6 uppercase">{CONTENT.about.label}</h4>
-          <h2 className="text-4xl md:text-6xl font-bold leading-[1.1] mb-8 whitespace-pre-line">
-            {CONTENT.about.headline}
-          </h2>
-          <p className="text-xl text-zinc-400 leading-relaxed max-w-lg">
-            {CONTENT.about.description}
-          </p>
-        </div>
-
-        <div className="w-full md:w-1/2 grid grid-cols-2 gap-8">
-          {CONTENT.about.stats.map((stat, i) => (
-            <div key={i} className="stat-item border-l border-zinc-800 pl-6">
-              <div className="text-5xl font-bold text-white mb-2">{stat.num}</div>
-              <div className="text-zinc-500 uppercase tracking-wider text-xs font-bold">{stat.label}</div>
-            </div>
-          ))}
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {CONTENT.about.stats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-surface-dark p-8 rounded-2xl border border-border-dark group hover:border-primary transition-all duration-300 transform hover:-translate-y-2"
+              >
+                <p className={`text-5xl md:text-6xl font-bold ${index === 0 || index === 3 ? 'text-primary' : 'text-text-primary-dark'}`}>
+                  {stat.num}
+                </p>
+                <p className="mt-2 text-sm text-text-secondary-dark">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
