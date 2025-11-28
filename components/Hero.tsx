@@ -29,13 +29,13 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#contact" className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-indigo-500 transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg shadow-primary/20">
+          <a href="#contact" className="w-full sm:w-auto bg-surface-dark/30 border border-border-dark backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold hover:bg-surface-dark/50 hover:border-primary/50 transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg shadow-primary/30 hover:bg-indigo-600 hover:shadow-2xl hover:shadow-indigo-600">
             <span>{CONTENT.hero.ctaPrimary}</span>
             <span className="material-symbols-outlined text-xl">arrow_forward</span>
           </a>
-          <a href="#portfolio" className="w-full sm:w-auto text-text-secondary-dark font-medium hover:text-white transition-colors duration-300 group flex items-center gap-2">
+          <a href="#portfolio" className="w-max max-sm:text-sm sm:w-auto text-text-secondary-dark font-medium hover:text-white transition-colors duration-300 group flex items-center gap-2">
             <span>{CONTENT.hero.ctaSecondary}</span>
-            <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">east</span>
+            <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </a>
         </div>
       </div>

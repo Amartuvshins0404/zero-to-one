@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             <a
               key={index}
               href={item.href}
-              className="text-sm font-medium text-text-secondary-dark hover:text-primary transition-colors"
+              className="text-lg font-semibold text-white/70 text-text-secondary-dark hover:text-primary transition-colors"
             >
               {item.label}
             </a>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           href="#contact"
           className="bg-primary text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-500 transition-all duration-300 text-sm hidden md:flex items-center gap-2"
         >
-          <span>Get A Quote</span>
+          <span>Хамтран ажиллах</span>
           <span className="material-symbols-outlined text-base">arrow_forward</span>
         </a>
 
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               className="bg-primary text-white px-5 py-3 rounded-xl font-semibold text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get A Quote
+              Хамтран ажиллах
             </a>
           </div>
         </div>

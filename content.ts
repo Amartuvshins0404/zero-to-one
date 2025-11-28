@@ -4,9 +4,8 @@ export const CONTENT = {
     tagline: "Creative Intelligence"
   },
   navigation: [
-    { label: "Бидний ажил", href: "#portfolio" },
-    { label: "Үнэ", href: "#pricing" },
-    { label: "Баг", href: "#team" },
+    { label: "Бүтээгдэхүүн", href: "#portfolio" },
+    { label: "Үнийн санал", href: "#pricing" },
     { label: "Холбогдох", href: "#contact" }
   ],
   hero: {
@@ -15,30 +14,38 @@ export const CONTENT = {
       highlight: "Дижитал ",
       suffix: "ертөнцөд"
     },
-    description: "Бизнес бол таны хувьд ажил биш, систем болоход тань туслах багийг та эндээс оллоо. 24/7 working is not the way to build business!",
+    description: "Хурдан, хялбар, хүртээмжтэй",
     ctaPrimary: "Төсөл эхлүүлье",
     ctaSecondary: "Бидний ажил үзье",
     backgroundImage: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,w_450,h_400/v1764166863/unnamed_fw95yf.png"
   },
   about: {
     label: "Яагаад бид гэж?",
-    headline: "Загварлаг дизайн + Хурдан технологи = Succeed!",
+    headline: "Хамтийн ажиллагаа + Загварлаг дизайн = Succeed!",
     description: "Хэрвээ таны бизнес маш их цаг үрдэг, таны орон зай зайлшгүй шаардалгатай бол та АЮУЛД байна! Бид технологийн тусламжтай таны бизнесийг автоматжуулсан систем болгоход тусалдаг. Та бидэнтэй холбогдон зөвөлгөө авах боломжтой!",
     stats: [
       { num: "3+", label: "жилийн туршлага" },
-      { num: "15+", label: "амжилттай төсөл" },
-      { num: "3", label: "багийн гишүүд" },
+      { num: "16", label: "амжилттай төсөл" },
+      { num: "2", label: "ажиллаж буй төсөл" },
       { num: "24/7", label: "дэмжлэг үйлчилгээ" }
     ]
   },
   projects: {
     label: "Бидний ажил",
     headline: "Бид юу хийж чаддаг вэ?",
-    description: "Энгийн танилцуулга сайтаас эхлээд төлбөр, DAN холбосон онлайн худалдааны платформ хүртэл. Таны төсөөлж байгаа юмыг бид бодит болгоно.",
+    description: "Энгийн танилцуулга сайтаас эхлээд төлбөрийн систем, DAN системтэй холбогдсон онлайн худалдааны платформ хүртэл, таны төсөөллийг бид бодит болгоно.",
     viewAllText: "Бүх төсөл үзэх",
     items: [
       {
         id: 1,
+        title: "Байгууллагын танилцуулга",
+        category: "Брэндинг",
+        description: "Танай байгууллагын танилцуулга, Portfolio хуудсыг бүтээх боломжтой",
+        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1CRqFa6t5tCwB9GdUErlSI4UihLwNsIWHQoM9_apeJfTdOMzjMsTKhr7wJjv_X52SVO25SO9dQNhEYnfC4QkqKU-bAGXsPCZi-8m0qs9prWb-etkYn1NNI1N_z9Htk9lTh_sBkpwUx0V6Com7SJzRorm1v9ScOv8TYPcndrIxtw6pHgsjqmg1mpOdedbovqVbMTKQ-0bMTg8gEaitwME97gzGdD3W-CAc-IcWJ4wi2uhbATvuxzi-iaPmATWwBihf8ZNuvzsB8Io",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSddCRRRKNkGBEbxBCxtdsH-2y76iVdCzwuPWplp-wQ8S8ZEgg/viewform"
+      },
+      {
+        id: 2,
         title: "Худалдааны платформ",
         category: "Вэбсайт",
         description: "Захиалгын систем, Төлбөрийн системтэй Админий эрхээр удирдах боломжтой",
@@ -46,19 +53,11 @@ export const CONTENT = {
         link: "https://docs.google.com/forms/d/e/1FAIpQLScz1Iu1aFv8wqG3BmTzP-ClRrlGvqV68qBGiQlLvY0a-vW9lw/viewform?usp=send_form"
       },
       {
-        id: 2,
-        title: "Байгууллагын танилцуулга",
-        category: "Хөгжүүлэлт",
-        description: "Танай байгууллагын танилцуулга, Portfolio хуудсыг бүтээх боломжтой",
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1CRqFa6t5tCwB9GdUErlSI4UihLwNsIWHQoM9_apeJfTdOMzjMsTKhr7wJjv_X52SVO25SO9dQNhEYnfC4QkqKU-bAGXsPCZi-8m0qs9prWb-etkYn1NNI1N_z9Htk9lTh_sBkpwUx0V6Com7SJzRorm1v9ScOv8TYPcndrIxtw6pHgsjqmg1mpOdedbovqVbMTKQ-0bMTg8gEaitwME97gzGdD3W-CAc-IcWJ4wi2uhbATvuxzi-iaPmATWwBihf8ZNuvzsB8Io",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSddCRRRKNkGBEbxBCxtdsH-2y76iVdCzwuPWplp-wQ8S8ZEgg/viewform"
-      },
-      {
         id: 3,
         title: "Дан Систем нэвтрүүлэлт",
-        category: "Брэндинг",
+        category: "Хөгжлүүлэлт",
         description: "QPay, Toki, Google Wallet, MonPay, SocialPay зэрэг бүх төрлийн төлбөрийн систем болон DAN бүртгэлийн систем нэвтрүүлэх үйлчилгээг үзүүлнэ",
-        imageUrl: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,h_350/v1764166944/sddefault_xmb8mn.jpg",
+        imageUrl: "https://res.cloudinary.com/dolfbqzp3/image/upload/v1764229906/586185718_1155908496250552_7247516888012407640_n_iwxdlm.png",
         link: "https://docs.google.com/forms/d/e/1FAIpQLScmXvWTZt_JQu8UynF-7BBbPNHXxeQ0IMtY6xhomxy2UllE1A/viewform"
       }
     ]
@@ -155,12 +154,12 @@ export const CONTENT = {
         price: "₮450,000/сар",
         features: [
           ".mn домэйн нэр үнэгүй",
-          "Сервер, хадгалах орон зайн зардал багтсан",
+          "Датабаз 8 GB + 100GB зураг, бичлэг",
           "Тогтмол техникийн найдвартай ажиллагаа",
-          "Вебсайт шинэчлэлт, өөрчлөлт оруулж болно",
+          "Вебсайт шинэчлэлт (өнгө төрх, layout -ийн өөрчлөлт)",
           "3-14 хоног дотор асуудлыг шийдвэрлэж өгнө",
           "Олон хэлний сонголттой болгох",
-          "AI туслах (Чатбот) холбох боломж",
+          "AI туслах (Чатбот) холбох боломж (5 сая token)",
           "Хурдан ажиллагаатай сервер (2-Core, 4GB RAM)"
         ],
         ctaText: "Сонгох",
@@ -172,8 +171,9 @@ export const CONTENT = {
         features: [
           "Maintainance Level 1-ийн бүх боломжууд",
           "Илүү өндөр хүчин чадалтай сервер (4-Core, 8GB RAM)",
-          "AI туслахын хэрэглээг нэмэгдүүлэх",
-          "Илүү их хандалт даах чадвар"
+          "AI туслахын хэрэглээг нэмэгдүүлэх (10 сая token)",
+          "Илүү их хандалт даах чадвар",
+          "Нэмэлт feature хөгжүүлэлт (7-14 хоног)",
         ],
         ctaText: "Сонгох",
         isPopular: true
@@ -184,7 +184,7 @@ export const CONTENT = {
         features: [
           "Maintainance Level 2-ийн бүх боломжууд",
           "Өндөр ачаалал даах сервер (6-Core, 16GB RAM)",
-          "AI туслахын хязгааргүй шахуу хэрэглээ",
+          "AI туслахын хэрэглээг нэмэгдүүлэх (20 сая token)",
           "Томоохон байгууллагад тохиромжтой"
         ],
         ctaText: "Сонгох",
@@ -196,8 +196,8 @@ export const CONTENT = {
         features: [
           "Maintainance Level 3-ийн бүх боломжууд",
           "Хамгийн өндөр хүчин чадал (8-Core, 32GB RAM)",
+          "AI туслахын хэрэглээг нэмэгдүүлэх (20 сая token)",
           "Байгууллагын онцлогт тохирсон тусгай хөгжүүлэлт",
-          "Бусад бүтээгдэхүүн, үйлчилгээг хөнгөлөлттэй үнээр үйлчлүүлэх"
         ],
         ctaText: "Холбогдох",
         isPopular: false

@@ -71,9 +71,11 @@ const Pricing: React.FC = () => {
               <ul className={`space-y-4 ${plan.isPopular ? 'text-indigo-200' : 'text-text-secondary-dark'}`}>
                 {plan.features.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-center">
-                    <span className={`material-symbols-outlined mr-3 text-lg ${plan.isPopular ? 'text-white' : 'text-primary'}`}>
-                      check_circle
-                    </span>
+                    {feature.startsWith('Maintainance') ? <span className={`material-symbols-outlined mr-3 text-lg ${plan.isPopular ? 'text-white' : 'text-primary'}`}>
+                      check
+                    </span> : <span className={`material-symbols-outlined mr-3 text-lg ${plan.isPopular ? 'text-white' : 'text-primary'}`}>
+                      add
+                    </span>}
                     {feature}
                   </li>
                 ))}

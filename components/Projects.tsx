@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CONTENT } from '../content';
 
 const Projects: React.FC = () => {
+    const [showModal, setShowmodal] = useState(false);
+    function handleClick() {
+        setShowmodal(!showModal);
+    }
     return (
         <section id="portfolio" className="bg-surface-dark py-24 sm:py-32">
             <div className="container mx-auto px-6 lg:px-8">
@@ -21,8 +25,11 @@ const Projects: React.FC = () => {
                     {CONTENT.projects.items.map((project, index) => (
                         <a
                             key={project.id}
-                            href={project.link}
+                            href={project.id == 1 ? '#': project.link}
                             className={`relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/20 focus-within:ring-2 focus-within:ring-primary/50 focus-within:ring-offset-2 focus-within:ring-offset-surface-dark transition-all duration-500 h-[500px] flex flex-col ${index === 1 ? 'md:mt-16' : ''}`}
+                            onClick={() => {
+                                if (project.id == 1) handleClick();
+                            }}
                         >
                             <img
                                 src={project.imageUrl}
@@ -46,13 +53,26 @@ const Projects: React.FC = () => {
                         </a>
                     ))}
                 </div>
-
-                <div className="mt-16 text-center">
+                {/* <div className="mt-16 text-center">
                     <button className="bg-surface-dark border border-border-dark text-text-primary-dark px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all duration-300">
                         {CONTENT.projects.viewAllText}
                     </button>
-                </div>
+                </div> */}
             </div>
+            {showModal && (
+                <div className="fixed inset-0 bg-black/50 flex flex-col items-center justify-center z-50">
+                    <div className='w-96 p-10 rounded-xl bg-surface-dark '>
+                        <div className='flex items-center justify-between'>
+                            <p className='text-text-primary-dark text-sm'>Та яг одоо байгууллагын танилцуулга харж байна. арассо</p>
+                            <button onClick={handleClick} className="material-symbols-outlined text-xl">close</button>
+                        </div>
+                        <div className='flex items-center justify-between mt-4'>
+                            <button onClick={handleClick} className="p-2 mt-4 rounded-full bg-primary text-white text-sm px-3">Аан, за уучлаарай</button>
+                            <button onClick={()=> {alert('Уулзаж болно! 9600-1214. Залгаад учраа олж болно шүү, хө!')}} className="p-2 mt-4 rounded-full bg-secondary text-white text-sm px-3">Дараадах даа, хө!</button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
