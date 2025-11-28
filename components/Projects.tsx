@@ -66,10 +66,6 @@ const Projects: React.FC = () => {
                             <p className='text-text-primary-dark text-sm'>Та яг одоо байгууллагын танилцуулга харж байна.</p>
                             <button onClick={handleClick} className="material-symbols-outlined text-xl">close</button>
                         </div>
-                        <div className='flex items-center justify-between mt-4'>
-                            <button onClick={handleClick} className="p-2 mt-4 rounded-full bg-primary text-white text-sm px-3">Аан, за уучлаарай</button>
-                            <button onClick={()=> {alert('Хэхэ')}} className="p-2 mt-4 rounded-full bg-secondary text-white text-sm px-3">Дараадах даа, хө!</button>
-                        </div>
                     </div>
                 </div>
             )}
