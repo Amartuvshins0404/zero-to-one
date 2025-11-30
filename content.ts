@@ -96,7 +96,7 @@ export const CONTENT = {
     ctaButton: "Ярилцъя",
     backgroundImage: "https://res.cloudinary.com/dolfbqzp3/image/upload/c_crop,w_450,h_400/v1764166863/unnamed_fw95yf.png",
     email: "dulguuntamir.edu@gmail.com",
-    phone: "+976 9600-1214",
+    phone: "+976 7266-1214",
     socials: [
       { name: "Instagram", link: "https://www.instagram.com/zerotoonemain/" },
       { name: "LinkedIn", link: "#" },
