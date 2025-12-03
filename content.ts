@@ -4,9 +4,9 @@ export const CONTENT = {
     tagline: "Creative Intelligence"
   },
   navigation: [
-    { label: "Бүтээгдэхүүн", href: "#portfolio" },
-    { label: "Үнийн санал", href: "#pricing" },
-    { label: "Холбогдох", href: "#contact" }
+    { label: "Бүтээгдэхүүн", href: "/products" },
+    { label: "Үнийн санал", href: "/#pricing" },
+    { label: "Холбогдох", href: "/contact" }
   ],
   hero: {
     headline: {
@@ -50,7 +50,7 @@ export const CONTENT = {
         category: "Вэбсайт",
         description: "Захиалгын систем, Төлбөрийн системтэй Админий эрхээр удирдах боломжтой",
         imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCCHitTzIfrGq0TYkNPUnk3WNNsglU0p5n52CXm4wxpZuvCFmbxNjO_hy5kxnrZU478aI7B_PvNx5NmDK9QbLlaw44V91-ptueJFpMgDhzj4ao7uygETuOI84lV-ZkwvPRkO0utsapLwGavylP8YziZCa-w2Y5WU4TjqT8f0_konmdS-3GRyEy5uz-VSq0a8dct6dUfkiEWObV8Pr9t-oPB69e8pXXOBHL9jxCaZJJ5YFBH6Xv7EfDRWGlY-xWP1kPaiUQiETCDFfk",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLScz1Iu1aFv8wqG3BmTzP-ClRrlGvqV68qBGiQlLvY0a-vW9lw/viewform?usp=send_form"
+        link: "https://ecommerce-two-zeta-57.vercel.app/"
       },
       {
         id: 3,
@@ -203,5 +203,167 @@ export const CONTENT = {
         isPopular: false
       }
     ]
+  },
+  productsPage: {
+    header: {
+      label: "Products & Features",
+      title: "Zero to One",
+      highlight: "",
+      description: "ZTO Agency is a digital agency that provides a range of services to help businesses grow and succeed. We turn complex problems into elegant digital solutions."
+    },
+    tabs: {
+      ecommerce: {
+        id: 'Ecommerce',
+        title: "Enterprise E-Commerce Platforms",
+        description: "Build a powerful online presence with our custom e-commerce solutions. We integrate local payment gateways like QPay, SocialPay, and MonPay with global standards to ensure a seamless shopping experience for your customers.",
+        features: [
+          "Full Payment Gateway Integration (QPay, SocialPay, etc.)",
+          "Real-time Inventory & Order Management System",
+          "Custom Admin Dashboard with Sales Analytics",
+          "SEO-Optimized Product Pages & Fast Checkout"
+        ],
+        image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&q=80"
+      },
+      portfolio: {
+        id: 'Portfolio',
+        title: "Premium Digital Portfolios",
+        description: "Stand out in the digital landscape with a bespoke portfolio website. We combine aesthetic excellence with technical performance to showcase your brand's unique story and achievements.",
+        features: [
+          "Immersive WebGL & GSAP Animations",
+          "CMS Integration for Easy Content Updates",
+          "Mobile-First Responsive Architecture",
+          "High-Performance Asset Optimization"
+        ],
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      },
+      danSystem: {
+        id: 'DAN System',
+        title: "Government & DAN Integration",
+        description: "Securely connect your digital infrastructure with Mongolia's DAN authentication system. We ensure compliance, security, and seamless user verification for your applications.",
+        features: [
+          "Official DAN SSO (Single Sign-On) Implementation",
+          "Encrypted Data Transmission & Storage",
+          "Automated User Verification Workflows",
+          "Enterprise-Grade Security Protocols"
+        ],
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+      },
+      aiChatbot: {
+        id: 'AI Chatbot',
+        title: "Next-Gen AI Assistants",
+        description: "Revolutionize your customer support with custom-trained AI agents. Our chatbots understand context, handle complex queries, and provide 24/7 support in Mongolian and English.",
+        features: [
+          "Custom LLM Training on Your Business Data",
+          "Multi-Channel Integration (FB Messenger, Telegram, Web)",
+          "Sentiment Analysis & Smart Handoff",
+          "Automated Lead Generation & Qualification"
+        ],
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    process: {
+      label: "How We Work",
+      title: "Our Process",
+      description: "From concept to reality, we follow a proven methodology to ensure success.",
+      steps: [
+        {
+          title: "Discovery",
+          description: "We dive deep into your business model, market, and user needs to understand the core challenge."
+        },
+        {
+          title: "Strategy",
+          description: "We build a comprehensive roadmap and technical architecture for your digital transformation."
+        },
+        {
+          title: "Development",
+          description: "Our experts build your solution using cutting-edge technologies and best practices."
+        },
+        {
+          title: "Launch",
+          description: "We deploy your product, ensure a smooth market entry, and provide ongoing support."
+        }
+      ]
+    },
+    faq: {
+      label: "Support",
+      title: "Frequently Asked Questions",
+      description: "Everything you need to know about working with us. Can't find the answer you're looking for?",
+      buttonText: "Contact Support",
+      items: [
+        {
+          question: "How long does a typical project take?",
+          answer: "Project timelines vary based on complexity. A standard website might take 2-4 weeks, while a complex web application could take 2-3 months. We provide detailed timelines during the strategy phase."
+        },
+        {
+          question: "Do you provide post-launch support?",
+          answer: "Yes, we offer comprehensive maintenance packages to ensure your digital products remain secure, up-to-date, and performant. We're partners for the long haul."
+        },
+        {
+          question: "What technologies do you use?",
+          answer: "We specialize in modern stacks including React, Next.js, Node.js, Python, and cloud solutions like AWS and Google Cloud. We choose the best tool for your specific needs."
+        },
+        {
+          question: "Can you help with rebranding?",
+          answer: "Absolutely. Our design team specializes in creating cohesive brand identities that resonate with your target audience and stand out in the market."
+        }
+      ]
+    },
+    cta: {
+      title: "Ready to Transform Your Business?",
+      description: "Let's build something extraordinary together. Schedule your free consultation today.",
+      buttonText: "Start Your Project"
+    }
+  },
+  contactPage: {
+    header: {
+      label: "Get in Touch",
+      title: "Let's Start a Conversation",
+      description: "Whether you have a question, a project idea, or just want to say hello, we're here to listen."
+    },
+    tabs: {
+      general: "General Inquiry",
+      booking: "Book a Consultation"
+    },
+    generalForm: {
+      title: "Send us a Message",
+      description: "We usually respond within 24 hours.",
+      fields: {
+        name: { label: "Full Name", placeholder: "John Doe" },
+        email: { label: "Email Address", placeholder: "john@example.com" },
+        subject: { label: "Subject", placeholder: "How can we help?" },
+        message: { label: "Message", placeholder: "Tell us more about your inquiry..." }
+      },
+      submitButton: "Send Message"
+    },
+    bookingForm: {
+      title: "Schedule a Consultation",
+      description: "Let's discuss your project in detail. Fill out the form below to get started.",
+      fields: {
+        name: { label: "Full Name", placeholder: "John Doe" },
+        email: { label: "Email Address", placeholder: "john@example.com" },
+        company: { label: "Company Name", placeholder: "Your Company Ltd." },
+        projectType: {
+          label: "Project Type",
+          options: ["Web Development", "Mobile App", "UI/UX Design", "Consulting", "Other"]
+        },
+        budget: {
+          label: "Budget Range",
+          options: ["<$5k", "$5k - $10k", "$10k - $20k", "$20k+", "Not sure"]
+        },
+        description: { label: "Project Details", placeholder: "Briefly describe your project goals and requirements..." }
+      },
+      submitButton: "Request Booking"
+    },
+    contactInfo: {
+      title: "Contact Information",
+      email: "dulguuntamir.edu@gmail.com",
+      phone: "+976 7266-1214",
+      address: "Ulaanbaatar, Mongolia",
+      socials: [
+        { name: "Instagram", link: "https://www.instagram.com/zerotoonemain/" },
+        { name: "Facebook", link: "#" },
+        { name: "LinkedIn", link: "#" }
+      ]
+    }
   }
 };

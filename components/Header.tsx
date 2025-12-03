@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-40 px-6 lg:px-8 py-5 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
       <div className="container mx-auto flex justify-between items-center bg-surface-dark/30 border border-border-dark backdrop-blur-md rounded-full py-3 px-6 shadow-2xl shadow-black/20">
-        <a href="#" className="text-lg font-bold text-text-primary-dark tracking-wider">
+        <a href="/" className="text-lg font-bold text-text-primary-dark tracking-wider">
           {CONTENT.meta.name.toUpperCase()}
         </a>
 
